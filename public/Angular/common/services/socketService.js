@@ -14,7 +14,7 @@
             var connection;
             
             function start(port){
-                connection = new WebSocket('ws://localhost:' + port);
+                connection = new WebSocket('ws://104.131.127.133:' + port);
                 connection.onmessage = function(event){
                     receive(event);
                 }
