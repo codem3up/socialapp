@@ -6,11 +6,9 @@ var methodOverride = require('method-override');
 var ws = require("nodejs-websocket");
 
 
-//var mongoose = require('mongoose');
+var db = require('./config/db');
 
-//var db = require('./config/db');
-
-//mongoose.connect(db.url);
+mongoose.connect(db.url);
 
 var port = process.env.PORT || 3000;
 
