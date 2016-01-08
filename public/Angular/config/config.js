@@ -1,6 +1,8 @@
 (function(){ 
     angular.module('app')
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $locationProvider, $urlRouterProvider) {
+    
+    $locationProvider.html5Mode(true);
 
     $stateProvider
         .state('chat', {
