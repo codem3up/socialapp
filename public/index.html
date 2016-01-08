@@ -7,10 +7,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
     <script src="Angular/app.js"></script>
     <!-- Modules -->
+    <script src="Angular/config/config.js"></script>
+    <script src="Angular/common/commonModule.js"></script>
+    <script src="Angular/chat/chatModule.js"></script>
     <!-- Services -->
+    <script src="Angular/common/services/socketService.js"></script>
     <!-- Controllers -->
+    <script src="Angular/chat/controllers/chatController.js"></script>
 </head>
-<body ng-app="app"
-    <h1 class="text-center">Node app {{5.0-4}}</h1>
+<body ng-app="app">
+    <div ui-view></div>
 </body>
 </html>
