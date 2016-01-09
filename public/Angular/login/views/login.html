@@ -1,0 +1,15 @@
+<div class="centered">
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Login</h2>
+    <input type="text" class="inputEmail" class="form-control"  placeholder="Email address" required autofocus ng-model="ctrl.credentials.email"></input><br />
+    <input type="password" class="inputPassword" class="form-control"  placeholder="Password" required autofocus ng-model="ctrl.credentials.password"></input>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" ng-model="ctrl.remember">Remember me</input>
+        </label>
+     </div>
+            
+    <button class="btn btn-primary" ng-click="ctrl.login(ctrl.credentials)">Submit</button>
+    <br />
+    Don't have a User? <a ng-click="ctrl.signup()">Sign up here</a>
+</div>

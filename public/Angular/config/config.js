@@ -14,6 +14,17 @@
             controller: "chatController as ctrl"
         })
         
+        .state('login', {
+            url: "/login",
+            templateUrl: "Angular/login/views/login.html",
+            controller: "loginController as ctrl"
+        })
+        
+        .state('signup', {
+            url: "/signup",
+            templateUrl: "Angular/login/views/signup.html",
+            controller: "signupController as ctrl"
+        })
         $urlRouterProvider.otherwise("chat");
     });
 })();

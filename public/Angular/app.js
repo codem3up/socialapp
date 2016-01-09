@@ -2,6 +2,7 @@
     angular.module('app', [
         'ui.router',
         'ui.bootstrap',
+        'loginModule',
         'chatModule',
     ]);
 })();
