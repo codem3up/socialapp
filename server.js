@@ -28,6 +28,8 @@ ws.myConnections = [];
 
 require('./app/websocket')(ws)
 
+require('./tests/redis-test.js')();
+
 app.listen(port);
 
 console.log('Node listening on port ' + port);
