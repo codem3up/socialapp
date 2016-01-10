@@ -14,6 +14,5 @@ module.exports = function(){
 
     client.get('guid2', function(err, reply){
         var user2 = JSON.parse(reply);
-        console.log(user2);
     })
 }
