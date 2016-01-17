@@ -4,5 +4,7 @@
         'ui.bootstrap',
         'loginModule',
         'chatModule',
+        'toaster',
+        'commonModule'
     ]);
 })();

@@ -3,9 +3,9 @@
         .module('loginModule')
         .controller('loginController', loginController);
         
-        loginController.$inject = ['$state'];
+        loginController.$inject = ['$state', 'loginService', 'toasterService'];
         
-        function loginController($state){
+        function loginController($state, loginService, toasterService){
             var vm = this;
             
             vm.credentials = {};
@@ -14,12 +14,18 @@
             vm.signup = signup;
             
             function login(credentials){
-                console.log("credentials");
+                loginService.login(credentials)
+                .then(function(res){
+                    console.log(res.data);
+                    toasterService.success("User Logged in: " + res.data.sessionToken);
+                })
+                .catch(function(res){
+                    toasterService.error("Failed to log in");
+                })
             }
             
             function signup(){
                 $state.transitionTo('signup');
             }
-            
         }
 })();

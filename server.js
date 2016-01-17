@@ -26,9 +26,7 @@ require('./app/routes')(app);
 
 ws.myConnections = [];
 
-require('./app/websocket')(ws)
-
-require('./tests/redis-test.js')();
+require('./app/utils/websocket')(ws)
 
 app.listen(port);
 
