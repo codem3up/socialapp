@@ -25,6 +25,12 @@
             templateUrl: "Angular/login/views/signup.html",
             controller: "signupController as ctrl"
         })
+        
+        .state('menu', {
+            url: "/menu",
+            templateUrl: "Angular/menu/views/menu.html",
+            controller: "menuController as ctrl"
+        })
         $urlRouterProvider.otherwise("chat");
     });
 })();

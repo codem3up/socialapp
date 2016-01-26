@@ -9,6 +9,7 @@
     "angular-route": "latest",
     "ui-router": "latest",
     "angular-ui-bootstrap": "latest",
-    "AngularJS-Toaster": "angularjs-toaster#~0.4.181"
+    "AngularJS-Toaster": "angularjs-toaster#~0.4.181",
+    "ngStorage": "latest"
   }
 }
